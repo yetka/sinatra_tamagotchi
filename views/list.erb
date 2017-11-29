@@ -1,0 +1,15 @@
+<h2>Tamagotchi</h2>
+
+<% @list.each do |tamagotchi| %>
+  <h4><a href="/animal/<%= tamagotchi.id %>"><%= tamagotchi.name %></a></h4>
+<% end %>
+
+<h4>Add new tamagotchi to your pet collection:</h4>
+
+<form action="/" method="post">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input id="name" name="name" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Add!</button>
+</form>

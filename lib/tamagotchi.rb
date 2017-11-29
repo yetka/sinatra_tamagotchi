@@ -6,11 +6,11 @@ class Tamagotchi
   attr_accessor :activity_level
   attr_reader :id
 
-  def initialize(name,food_level,sleep_level,activity_level)
+  def initialize(name)
     @name = name
-    @food_level = food_level
-    @sleep_level = sleep_level
-    @activity_level = activity_level
+    @food_level = 10
+    @sleep_level = 10
+    @activity_level = 10
     @id = @@list.length + 1
   end
 
