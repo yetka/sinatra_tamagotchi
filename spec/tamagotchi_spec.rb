@@ -58,4 +58,12 @@ describe("Tamagotchi") do
       expect(tamagotchi.status_checker()).to(eq("alive"))
     end
   end
+
+  describe("#feeding") do
+    it("increade food_level by one") do
+      tamagotchi = Tamagotchi.new("Bunny")
+      tamagotchi.save()
+      expect(tamagotchi.feeding()).to(eq(11))
+    end
+  end
 end

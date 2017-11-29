@@ -43,4 +43,8 @@ class Tamagotchi
     end
   end
 
+  def feeding()
+    self.food_level + 1
+  end
+
 end
