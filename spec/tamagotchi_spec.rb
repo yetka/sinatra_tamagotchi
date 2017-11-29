@@ -66,4 +66,12 @@ describe("Tamagotchi") do
       expect(tamagotchi.feeding()).to(eq(11))
     end
   end
+
+  describe("#time_passing") do
+    it("decrease food_level by one") do
+      tamagotchi = Tamagotchi.new("Bunny")
+      tamagotchi.save()
+      expect(tamagotchi.time_passing()).to(eq(9))
+    end
+  end
 end

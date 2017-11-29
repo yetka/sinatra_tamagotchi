@@ -47,4 +47,8 @@ class Tamagotchi
     self.food_level + 1
   end
 
+  def time_passing()
+    self.food_level - 1
+  end
+
 end
