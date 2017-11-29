@@ -35,4 +35,12 @@ class Tamagotchi
     end
   end
 
+  def status_checker()
+    if self.food_level > 0
+      "alive"
+    else
+      "dead"
+    end
+  end
+
 end

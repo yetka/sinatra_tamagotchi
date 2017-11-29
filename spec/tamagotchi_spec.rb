@@ -50,4 +50,12 @@ describe("Tamagotchi") do
       expect(Tamagotchi.find(2)).to(eq(tamagotchi2))
     end
   end
+
+  describe("#status_checker") do
+    it("is alive if the food level is above 0") do
+      tamagotchi = Tamagotchi.new("Bunny")
+      tamagotchi.save()
+      expect(tamagotchi.status_checker()).to(eq("alive"))
+    end
+  end
 end
